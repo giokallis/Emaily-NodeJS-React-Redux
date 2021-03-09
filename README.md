@@ -1,1 +1,1 @@
-# money-getaway
+# Emaily-NodeJS-React-Redux

@@ -1,5 +1,15 @@
 {
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/src/index.js",
+  "scripts": {
+    "server": "cd server && npm install && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.7",
     "prettier": "2.2.1"
   }
 }

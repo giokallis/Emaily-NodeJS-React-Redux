@@ -1,4 +1,14 @@
 {
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/src/index.js",
+  "scripts": {
+    "server": "cd server && npm install && npm run dev",
+    "start": "cd server && npm install && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "prettier": "2.2.1"
   }

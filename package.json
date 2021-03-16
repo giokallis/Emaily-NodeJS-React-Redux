@@ -4,12 +4,17 @@
   "description": "",
   "main": "server/src/index.js",
   "scripts": {
-    "server": "cd server && npm install && npm run dev",
-    "start": "cd server && npm install && npm run dev"
+    "server": "npm install && npm run dev --prefix server",
+    "client": "npm install && npm run start --prefix client",
+    "start": "cd server && npm install && npm run dev",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
   }
 }

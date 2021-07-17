@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
@@ -20,20 +20,22 @@ const app = express();
  * Cookies Session
  */
 app.use(
-    cookieSession({
-      maxAge: 30 * 24 * 60 * 60 * 1000,
-      keys: [keys.cookieKey]
-    })
+  cookieSession({
+    maxAge: 30 * 24 * 60 * 60 * 1000,
+    keys: [keys.cookieKey]
+  })
 );
 app.use(passport.initialize());
 app.use(passport.session());
 
 /**
- * Mounting Routes
+ * Mounting routes
  */
 require('./routes/authRoutes')(app);
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
+  45;
+
   res.send('Emaily API is running');
 });
 
